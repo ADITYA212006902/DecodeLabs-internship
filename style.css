@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:#1e293b;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+/* Hero Section */
+
+.hero{
+    height:80vh;
+    background:linear-gradient(to right,#2563eb,#06b6d4);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+.hero button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:white;
+    color:#2563eb;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* Services */
+
+.services{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.services h2{
+    margin-bottom:30px;
+}
+
+.card-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:#f4f4f4;
+    padding:25px;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+/* About */
+
+.about{
+    background:#e2e8f0;
+    text-align:center;
+    padding:60px 20px;
+}
+
+/* Contact */
+
+.contact{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.contact form{
+    max-width:500px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+}
+
+.contact button{
+    padding:12px 25px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Responsive Design */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:15px;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    .card-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+}
